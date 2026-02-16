@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+:root {
+  /* Soft Minimalism / Ethereal Theme (Light Mode Default) */
+  --background: #F5F5F7; 
+  --foreground: #1D1D1F;
+  --card: #FFFFFF;
+  --card-foreground: #1D1D1F;
+  --popover: #FFFFFF;
+  --popover-foreground: #1D1D1F;
+  --primary: #000000;
+  --primary-foreground: #FFFFFF;
+  --secondary: #F5F5F7;
+  --secondary-foreground: #1D1D1F;
+  --muted: #F5F5F7;
+  --muted-foreground: #86868B;
+  --accent: #2c2c2e; 
+  --accent-foreground: #FFFFFF;
+  --destructive: #FF453A;
+  --destructive-foreground: #FFFFFF;
+  --border: transparent; /* No visible borders usually */
+  --input: #E5E5EA;
+  --ring: #000000;
+  --radius: 1.5rem; /* 24px - Highly rounded */
+  
+  /* Custom Shadows for Depth */
+  --shadow-subtle: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
+  --shadow-medium: 0 10px 40px -10px rgba(0, 0, 0, 0.08);
+  --shadow-float: 0 20px 60px -10px rgba(0, 0, 0, 0.12);
+}
+
+/* Dark mode removed to enforce Soft Minimalism Light Theme default */
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Utilities for Shadows */
+.shadow-subtle { box-shadow: var(--shadow-subtle); }
+.shadow-medium { box-shadow: var(--shadow-medium); }
+.shadow-float { box-shadow: var(--shadow-float); }
+
+/* Custom Scrollbar - Minimal */
+::-webkit-scrollbar {
+  width: 0px; /* Hidden scrollbar for cleaner look */
+  background: transparent;
+}
+
+
